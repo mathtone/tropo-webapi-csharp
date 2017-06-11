@@ -484,7 +484,6 @@ namespace TropoClassesTests
 
         #endregion
 
-
         #region Redirect Tests
 
         [TestMethod]
@@ -518,6 +517,5 @@ namespace TropoClassesTests
             JsonSerializerSettings settings = new JsonSerializerSettings { DefaultValueHandling = DefaultValueHandling.Ignore };
             return JsonConvert.SerializeObject(tropo, Formatting.None, settings).Replace("\\", "").Replace("\"{", "{").Replace("}\"", "}");
         }
-
     }
 }
